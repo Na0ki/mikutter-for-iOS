@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		093B7FFC1EB9C31E00B44637 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093B7FFB1EB9C31E00B44637 /* AppDelegate.swift */; };
+		093B80011EB9C31E00B44637 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 093B7FFF1EB9C31E00B44637 /* Main.storyboard */; };
+		093B80031EB9C31E00B44637 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 093B80021EB9C31E00B44637 /* Assets.xcassets */; };
+		093B80061EB9C31E00B44637 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 093B80041EB9C31E00B44637 /* LaunchScreen.storyboard */; };
+		093B80111EB9C31E00B44637 /* mikutterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093B80101EB9C31E00B44637 /* mikutterTests.swift */; };
+		093B801C1EB9C31E00B44637 /* mikutterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093B801B1EB9C31E00B44637 /* mikutterUITests.swift */; };
+		093B802C1EB9C37200B44637 /* FaqModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093B802B1EB9C37200B44637 /* FaqModel.swift */; };
+		093B80301EB9E67B00B44637 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093B802F1EB9E67B00B44637 /* NotificationModel.swift */; };
+		093B80311EB9F24E00B44637 /* FaqTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093B7FFD1EB9C31E00B44637 /* FaqTableViewController.swift */; };
+		093B80331EBA050E00B44637 /* FaqDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093B80321EBA050E00B44637 /* FaqDetailViewController.swift */; };
+		093B80381EBA2AE800B44637 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093B80371EBA2AE800B44637 /* Color.swift */; };
+		093B803A1EBA396500B44637 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093B80391EBA396500B44637 /* Font.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		093B800D1EB9C31E00B44637 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 093B7FF01EB9C31E00B44637 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 093B7FF71EB9C31E00B44637;
+			remoteInfo = mikutter;
+		};
+		093B80181EB9C31E00B44637 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 093B7FF01EB9C31E00B44637 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 093B7FF71EB9C31E00B44637;
+			remoteInfo = mikutter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		093B7FF81EB9C31E00B44637 /* mikutter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mikutter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		093B7FFB1EB9C31E00B44637 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		093B7FFD1EB9C31E00B44637 /* FaqTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FaqTableViewController.swift; path = view/FaqTableViewController.swift; sourceTree = "<group>"; };
+		093B80001EB9C31E00B44637 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		093B80021EB9C31E00B44637 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		093B80051EB9C31E00B44637 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		093B80071EB9C31E00B44637 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		093B800C1EB9C31E00B44637 /* mikutterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mikutterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		093B80101EB9C31E00B44637 /* mikutterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mikutterTests.swift; sourceTree = "<group>"; };
+		093B80121EB9C31E00B44637 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		093B80171EB9C31E00B44637 /* mikutterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mikutterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		093B801B1EB9C31E00B44637 /* mikutterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mikutterUITests.swift; sourceTree = "<group>"; };
+		093B801D1EB9C31E00B44637 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		093B802B1EB9C37200B44637 /* FaqModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FaqModel.swift; path = model/FaqModel.swift; sourceTree = "<group>"; };
+		093B802F1EB9E67B00B44637 /* NotificationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationModel.swift; path = model/NotificationModel.swift; sourceTree = "<group>"; };
+		093B80321EBA050E00B44637 /* FaqDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FaqDetailViewController.swift; path = view/FaqDetailViewController.swift; sourceTree = "<group>"; };
+		093B80371EBA2AE800B44637 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Color.swift; path = utils/Color.swift; sourceTree = "<group>"; };
+		093B80391EBA396500B44637 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Font.swift; path = utils/Font.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		093B7FF51EB9C31E00B44637 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		093B80091EB9C31E00B44637 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		093B80141EB9C31E00B44637 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		093B7FEF1EB9C31E00B44637 = {
+			isa = PBXGroup;
+			children = (
+				093B7FFA1EB9C31E00B44637 /* mikutter */,
+				093B800F1EB9C31E00B44637 /* mikutterTests */,
+				093B801A1EB9C31E00B44637 /* mikutterUITests */,
+				093B7FF91EB9C31E00B44637 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		093B7FF91EB9C31E00B44637 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				093B7FF81EB9C31E00B44637 /* mikutter.app */,
+				093B800C1EB9C31E00B44637 /* mikutterTests.xctest */,
+				093B80171EB9C31E00B44637 /* mikutterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		093B7FFA1EB9C31E00B44637 /* mikutter */ = {
+			isa = PBXGroup;
+			children = (
+				093B80361EBA2AD200B44637 /* utils */,
+				093B802A1EB9C34000B44637 /* model */,
+				093B80291EB9C32F00B44637 /* view */,
+				093B7FFB1EB9C31E00B44637 /* AppDelegate.swift */,
+				093B7FFF1EB9C31E00B44637 /* Main.storyboard */,
+				093B80021EB9C31E00B44637 /* Assets.xcassets */,
+				093B80041EB9C31E00B44637 /* LaunchScreen.storyboard */,
+				093B80071EB9C31E00B44637 /* Info.plist */,
+			);
+			path = mikutter;
+			sourceTree = "<group>";
+		};
+		093B800F1EB9C31E00B44637 /* mikutterTests */ = {
+			isa = PBXGroup;
+			children = (
+				093B80101EB9C31E00B44637 /* mikutterTests.swift */,
+				093B80121EB9C31E00B44637 /* Info.plist */,
+			);
+			path = mikutterTests;
+			sourceTree = "<group>";
+		};
+		093B801A1EB9C31E00B44637 /* mikutterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				093B801B1EB9C31E00B44637 /* mikutterUITests.swift */,
+				093B801D1EB9C31E00B44637 /* Info.plist */,
+			);
+			path = mikutterUITests;
+			sourceTree = "<group>";
+		};
+		093B80291EB9C32F00B44637 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				093B7FFD1EB9C31E00B44637 /* FaqTableViewController.swift */,
+				093B80321EBA050E00B44637 /* FaqDetailViewController.swift */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		093B802A1EB9C34000B44637 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				093B802B1EB9C37200B44637 /* FaqModel.swift */,
+				093B802F1EB9E67B00B44637 /* NotificationModel.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		093B80361EBA2AD200B44637 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				093B80371EBA2AE800B44637 /* Color.swift */,
+				093B80391EBA396500B44637 /* Font.swift */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		093B7FF71EB9C31E00B44637 /* mikutter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 093B80201EB9C31F00B44637 /* Build configuration list for PBXNativeTarget "mikutter" */;
+			buildPhases = (
+				093B7FF41EB9C31E00B44637 /* Sources */,
+				093B7FF51EB9C31E00B44637 /* Frameworks */,
+				093B7FF61EB9C31E00B44637 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mikutter;
+			productName = mikutter;
+			productReference = 093B7FF81EB9C31E00B44637 /* mikutter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		093B800B1EB9C31E00B44637 /* mikutterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 093B80231EB9C31F00B44637 /* Build configuration list for PBXNativeTarget "mikutterTests" */;
+			buildPhases = (
+				093B80081EB9C31E00B44637 /* Sources */,
+				093B80091EB9C31E00B44637 /* Frameworks */,
+				093B800A1EB9C31E00B44637 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				093B800E1EB9C31E00B44637 /* PBXTargetDependency */,
+			);
+			name = mikutterTests;
+			productName = mikutterTests;
+			productReference = 093B800C1EB9C31E00B44637 /* mikutterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		093B80161EB9C31E00B44637 /* mikutterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 093B80261EB9C31F00B44637 /* Build configuration list for PBXNativeTarget "mikutterUITests" */;
+			buildPhases = (
+				093B80131EB9C31E00B44637 /* Sources */,
+				093B80141EB9C31E00B44637 /* Frameworks */,
+				093B80151EB9C31E00B44637 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				093B80191EB9C31E00B44637 /* PBXTargetDependency */,
+			);
+			name = mikutterUITests;
+			productName = mikutterUITests;
+			productReference = 093B80171EB9C31E00B44637 /* mikutterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		093B7FF01EB9C31E00B44637 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = mikutter;
+				TargetAttributes = {
+					093B7FF71EB9C31E00B44637 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = JR4BR62VD7;
+						ProvisioningStyle = Automatic;
+					};
+					093B800B1EB9C31E00B44637 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = JR4BR62VD7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 093B7FF71EB9C31E00B44637;
+					};
+					093B80161EB9C31E00B44637 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = JR4BR62VD7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 093B7FF71EB9C31E00B44637;
+					};
+				};
+			};
+			buildConfigurationList = 093B7FF31EB9C31E00B44637 /* Build configuration list for PBXProject "mikutter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 093B7FEF1EB9C31E00B44637;
+			productRefGroup = 093B7FF91EB9C31E00B44637 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				093B7FF71EB9C31E00B44637 /* mikutter */,
+				093B800B1EB9C31E00B44637 /* mikutterTests */,
+				093B80161EB9C31E00B44637 /* mikutterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		093B7FF61EB9C31E00B44637 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				093B80061EB9C31E00B44637 /* LaunchScreen.storyboard in Resources */,
+				093B80031EB9C31E00B44637 /* Assets.xcassets in Resources */,
+				093B80011EB9C31E00B44637 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		093B800A1EB9C31E00B44637 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		093B80151EB9C31E00B44637 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		093B7FF41EB9C31E00B44637 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				093B80311EB9F24E00B44637 /* FaqTableViewController.swift in Sources */,
+				093B802C1EB9C37200B44637 /* FaqModel.swift in Sources */,
+				093B803A1EBA396500B44637 /* Font.swift in Sources */,
+				093B80331EBA050E00B44637 /* FaqDetailViewController.swift in Sources */,
+				093B7FFC1EB9C31E00B44637 /* AppDelegate.swift in Sources */,
+				093B80301EB9E67B00B44637 /* NotificationModel.swift in Sources */,
+				093B80381EBA2AE800B44637 /* Color.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		093B80081EB9C31E00B44637 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				093B80111EB9C31E00B44637 /* mikutterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		093B80131EB9C31E00B44637 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				093B801C1EB9C31E00B44637 /* mikutterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		093B800E1EB9C31E00B44637 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 093B7FF71EB9C31E00B44637 /* mikutter */;
+			targetProxy = 093B800D1EB9C31E00B44637 /* PBXContainerItemProxy */;
+		};
+		093B80191EB9C31E00B44637 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 093B7FF71EB9C31E00B44637 /* mikutter */;
+			targetProxy = 093B80181EB9C31E00B44637 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		093B7FFF1EB9C31E00B44637 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				093B80001EB9C31E00B44637 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		093B80041EB9C31E00B44637 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				093B80051EB9C31E00B44637 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		093B801E1EB9C31F00B44637 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		093B801F1EB9C31F00B44637 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		093B80211EB9C31F00B44637 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JR4BR62VD7;
+				INFOPLIST_FILE = mikutter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.hachune.mikutter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		093B80221EB9C31F00B44637 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JR4BR62VD7;
+				INFOPLIST_FILE = mikutter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.hachune.mikutter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		093B80241EB9C31F00B44637 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = JR4BR62VD7;
+				INFOPLIST_FILE = mikutterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.hachune.mikutterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mikutter.app/mikutter";
+			};
+			name = Debug;
+		};
+		093B80251EB9C31F00B44637 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = JR4BR62VD7;
+				INFOPLIST_FILE = mikutterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.hachune.mikutterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mikutter.app/mikutter";
+			};
+			name = Release;
+		};
+		093B80271EB9C31F00B44637 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = JR4BR62VD7;
+				INFOPLIST_FILE = mikutterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.hachune.mikutterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = mikutter;
+			};
+			name = Debug;
+		};
+		093B80281EB9C31F00B44637 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = JR4BR62VD7;
+				INFOPLIST_FILE = mikutterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.hachune.mikutterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = mikutter;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		093B7FF31EB9C31E00B44637 /* Build configuration list for PBXProject "mikutter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				093B801E1EB9C31F00B44637 /* Debug */,
+				093B801F1EB9C31F00B44637 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		093B80201EB9C31F00B44637 /* Build configuration list for PBXNativeTarget "mikutter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				093B80211EB9C31F00B44637 /* Debug */,
+				093B80221EB9C31F00B44637 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		093B80231EB9C31F00B44637 /* Build configuration list for PBXNativeTarget "mikutterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				093B80241EB9C31F00B44637 /* Debug */,
+				093B80251EB9C31F00B44637 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		093B80261EB9C31F00B44637 /* Build configuration list for PBXNativeTarget "mikutterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				093B80271EB9C31F00B44637 /* Debug */,
+				093B80281EB9C31F00B44637 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 093B7FF01EB9C31E00B44637 /* Project object */;
+}
