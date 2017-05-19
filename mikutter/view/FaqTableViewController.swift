@@ -39,7 +39,16 @@ class FaqTableViewController: UIViewController, UITableViewDelegate, UITableView
         tableView.delegate = self
         tableView.dataSource = self
         
+        let marimoView = UIImageView(image: #imageLiteral(resourceName: "marimo"))
+        let gesture = UITapGestureRecognizer(target: self, action: nil)
+        marimoView.addGestureRecognizer(gesture)
+        marimoView.isUserInteractionEnabled = true
+        marimoView.frame = CGRect(x: width - 100, y: height - 126, width: 80, height: 80)
+        
+        
+        self.view.addSubview(marimoView)
         self.view.addSubview(tableView)
+        self.view.bringSubview(toFront: marimoView)
     }
     
     
@@ -100,7 +109,12 @@ class FaqTableViewController: UIViewController, UITableViewDelegate, UITableView
     // リンクを開く
     func openLink(_ sender: AnyObject) {
         let url: URL = URL.init(string: self.notification.url)!
-        UIApplication.shared.open(url)
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url)
+        } else {
+            // Fallback on earlier versions
+            UIApplication.shared.openURL(url)
+        }
     }
 }
 

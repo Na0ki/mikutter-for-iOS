@@ -80,9 +80,9 @@ final class NotificationModel: NSObject {
                     json.forEach() { events in
                         let text: String = events.value(forKey: "text") as? String ?? ""
                         let url: String = events.value(forKey: "url") as? String ?? ""
-                        let expire = Date.init(fromISO8601: events.value(forKey: "expire") as! String)
+                        let expire = Date.init(fromISO8601: events.value(forKey: "expire") as! String) ?? Date()
                         var model = notificationModel.init()
-                        model.set(text: text, url: url, expire: expire!)
+                        model.set(text: text, url: url, expire: expire)
                         result.append(model)
                     }
                     self.delegate?.ntComplete(result: result)
@@ -97,10 +97,22 @@ final class NotificationModel: NSObject {
 
 extension Date {
     init?(fromISO8601 string: String) {
-        let formatter = ISO8601DateFormatter.init()
-        guard let date = formatter.date(from: string) else {
-            return nil
+        if #available(iOS 10.0, *) {
+            let formatter = ISO8601DateFormatter.init()
+            guard let date = formatter.date(from: string) else {
+                return nil
+            }
+            self = date
+        } else {
+            // Fallback on earlier versions
+            let formatter = DateFormatter.init()
+            formatter.locale = Locale(identifier: "en_US_POSIX")
+            formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZ"
+            formatter.timeZone = TimeZone.current
+            guard let date = formatter.date(from: string) else {
+                return nil
+            }
+            self = date
         }
-        self = date
     }
 }

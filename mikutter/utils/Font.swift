@@ -10,10 +10,10 @@ import UIKit
 
 extension UIFont {
     class var Base: UIFont {
-        return UIFont(name: "HiraKakuProN-W3", size: CGFloat(14))!
+        return UIFont(name: "HiraKakuProN-W3", size: CGFloat(18))!
     }
     
     class var Title: UIFont {
-        return UIFont(name: "HiraKakuProN-W3", size: CGFloat(20))!
+        return UIFont(name: "HiraKakuProN-W3", size: CGFloat(28))!
     }
 }
