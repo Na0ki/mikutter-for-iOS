@@ -108,6 +108,9 @@ class FaqTableViewController: UIViewController, UITableViewDelegate, UITableView
     
     // リンクを開く
     func openLink(_ sender: AnyObject) {
+        if self.notification.url.isEmpty {
+           return
+        }
         let url: URL = URL.init(string: self.notification.url)!
         if #available(iOS 10.0, *) {
             UIApplication.shared.open(url)
@@ -134,7 +137,9 @@ extension FaqTableViewController: FaqTaskDelegate, NotificationTaskDelegate {
     // Notification
     func ntComplete(result: Array<notificationModel>) {
         DispatchQueue.main.async(execute: { _ in
-            self.notification = result.first!
+            if result.count > 0 {
+                self.notification = result.first!
+            }
             self.tableView.reloadData()
         })
     }
