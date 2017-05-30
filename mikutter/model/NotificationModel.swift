@@ -15,7 +15,7 @@ struct notificationModel {
     var expire :Date
     
     init() {
-        self.text = ""
+        self.text = "お知らせがありません"
         self.url = ""
         self.expire = Date()
     }
